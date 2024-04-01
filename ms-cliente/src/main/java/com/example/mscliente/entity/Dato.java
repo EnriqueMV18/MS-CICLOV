@@ -12,7 +12,7 @@ public class Dato {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String userName;
-    private String password;
+    private String usuario;
+    private String clave;
     private String correo;
 }
