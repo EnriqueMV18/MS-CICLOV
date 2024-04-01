@@ -2,11 +2,11 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Spring Boot-MsCatalogoApplication<ms-catalogo>",
+            "name": "Spring Boot-MsConfigServerApplication<ms-config-server>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "mainClass": "com.example.mscatalogo.MsCatalogoApplication",
-            "projectName": "ms-catalogo",
+            "mainClass": "com.example.msconfigserver.MsConfigServerApplication",
+            "projectName": "ms-config-server",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         },
@@ -17,16 +17,6 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "com.example.mscliente.MsClienteApplication",
             "projectName": "ms-cliente",
-            "args": "",
-            "envFile": "${workspaceFolder}/.env"
-        },
-        {
-            "type": "java",
-            "name": "Spring Boot-MsConfigServerApplication<ms-config-server>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "mainClass": "com.example.msconfigserver.MsConfigServerApplication",
-            "projectName": "ms-config-server",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }

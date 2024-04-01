@@ -1,9 +1,9 @@
-package com.example.msdato.service;
+package com.example.mscliente.service;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.example.msdato.entity.Dato;
+import com.example.mscliente.entity.Dato;
 
 
 public interface DatoService {

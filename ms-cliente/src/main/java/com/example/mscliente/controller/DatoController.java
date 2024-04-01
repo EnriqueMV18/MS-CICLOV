@@ -1,11 +1,11 @@
-package com.example.msdato.controller;
+package com.example.mscliente.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.example.msdato.entity.Dato;
-import com.example.msdato.service.DatoService;
+import com.example.mscliente.entity.Dato;
+import com.example.mscliente.service.DatoService;
 
 import java.util.List;
 
