@@ -1,4 +1,4 @@
-package com.example.mscliente.entity;
+package com.example.msdato.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,11 +8,11 @@ import lombok.Data;
 
 @Data
 @Entity
-public class Cliente {
+public class Dato {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String usuario;
-    private String contraseña;
+    private String userName;
+    private String password;
     private String correo;
 }

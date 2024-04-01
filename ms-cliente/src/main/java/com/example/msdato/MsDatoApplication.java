@@ -1,4 +1,4 @@
-package com.example.mscliente;
+package com.example.msdato;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
@@ -8,10 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class MsClienteApplication {
+public class MsDatoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MsClienteApplication.class, args);
+        SpringApplication.run(MsDatoApplication.class, args);
     }
 
     @Bean
