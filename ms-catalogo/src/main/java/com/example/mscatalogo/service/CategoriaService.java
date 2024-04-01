@@ -1,0 +1,18 @@
+package com.example.mscatalogo.service;
+
+import com.example.mscatalogo.entity.Categoria;
+
+
+import java.util.List;
+import java.util.Optional;
+
+
+public interface CategoriaService {
+    List<Categoria> listar();
+    Categoria guardar (Categoria categoria);
+    Categoria actualizar (Categoria categoria);
+    Optional<Categoria> buscarPorld(Integer id);
+    void eliminarPorld(Integer id);
+
+
+}
