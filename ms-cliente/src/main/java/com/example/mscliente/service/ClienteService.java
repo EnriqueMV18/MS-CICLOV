@@ -1,9 +1,10 @@
 package com.example.mscliente.service;
 
+import com.example.mscliente.entity.Cliente;
+
+
 import java.util.List;
 import java.util.Optional;
-
-import com.example.mscliente.entity.Cliente;
 
 
 public interface ClienteService {
