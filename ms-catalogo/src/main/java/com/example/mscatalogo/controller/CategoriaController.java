@@ -1,7 +1,7 @@
 package com.example.mscatalogo.controller;
 
 import com.example.mscatalogo.entity.Categoria;
-import com.example.mscatalogo.service.CategoriaService;
+import com.example.mscatalogo.service.CatergoriaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,28 +12,31 @@ import java.util.List;
 @RequestMapping("/categoria")
 public class CategoriaController {
     @Autowired
-    private CategoriaService categoriaService;
+    private CatergoriaService catergoriaService;
 
-    @GetMapping()
-    public ResponseEntity<List<Categoria>>list(){
-        return ResponseEntity.ok().body(categoriaService.listar());
+    @GetMapping
+    ResponseEntity<List<Categoria>> lista(){
+        return ResponseEntity.ok(catergoriaService.lista());
     }
-    @PostMapping()
-    public ResponseEntity<Categoria>save(@RequestBody Categoria categoria){
-        return ResponseEntity.ok(categoriaService.guardar(categoria));
+    @PostMapping
+    ResponseEntity<Categoria> guardar(@RequestBody Categoria categoria){
+        return ResponseEntity.ok(catergoriaService.guardar((categoria)));
     }
-    @PutMapping()
-    public  ResponseEntity<Categoria>update(@RequestBody Categoria categoria){
-        return ResponseEntity.ok(categoriaService.actualizar(categoria));
-    }
+
     @GetMapping("/{id}")
-    public ResponseEntity<Categoria>listById(@PathVariable(required = true) Integer id){
-        return ResponseEntity.ok().body(categoriaService.buscarPorld(id).get());
+    ResponseEntity<Categoria> buscarPorId(@PathVariable(required = true) Integer id){
+        return ResponseEntity.ok(catergoriaService.buscarPorId(id).get());
+
+    }
+
+    @PutMapping
+    ResponseEntity<Categoria> actualizar(@RequestBody Categoria categoria){
+        return ResponseEntity.ok(catergoriaService.actualizar((categoria)));
     }
     @DeleteMapping("/{id}")
-    public ResponseEntity<List<Categoria>> eliminar(@PathVariable(required = true) Integer id){
-        categoriaService.eliminarPorld(id);
-        return ResponseEntity.ok(categoriaService.listar());
+    public ResponseEntity<List<Categoria>> eleminar(@PathVariable(required = true) Integer id){
+        catergoriaService.eleminar(id);
+        return ResponseEntity.ok(catergoriaService.lista());
 
     }
 }

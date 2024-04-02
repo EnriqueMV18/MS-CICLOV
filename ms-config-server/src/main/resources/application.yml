@@ -1,18 +1,25 @@
+
 server:
-    port: 7070
+  port: 7070
+
+
 spring:
-    application:
-        name: config-server
-    cloud:
-        config:
-            server:
-                git:
-                    uri: https://github.com/EnriqueMV18/MS-CICLOV.git
-                    search-paths: config-data
-                    #username: 
-                    #password: 
-                    default-label: ms-config-server
-    security:
-        user:
-            name: root
-            password: s3cr3t
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/EnriqueMV18/MS-CICLOV.git # ruta del repositorio git
+          searchPaths: config-data
+          #username:
+          #password:
+          default-label: main
+
+
+
+
+  security:
+    user:
+      name: root
+      password: 123456
