@@ -1,4 +1,4 @@
-package com.example.mscliente;
+package com.example.msproducto;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
@@ -8,17 +8,17 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class MsClienteApplication {
+public class MsProductoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MsClienteApplication.class, args);
+		SpringApplication.run(MsProductoApplication.class, args);
 	}
 	@Bean
 	public OpenAPI custumOpenAPI() {
 		return new OpenAPI().info(new Info()
-				.title("OPEN API MICROSERVICIO CLIENTE")
+				.title("OPEN API MICROSERVICIO PRODUCTO")
 				.version("0.0.1")
-				.description("servicio web cliente")
+				.description("servicio web producto")
 				.termsOfService("http://swagger.io/terms")
 				.license(new License().name("Apache 2.0").url("http://springdoc.org"))
 		);
