@@ -1,4 +1,4 @@
-package com.example.msproducto;
+package com.example.mspedido;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
@@ -8,10 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class MsProductoApplication {
+public class MsPedidoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MsProductoApplication.class, args);
+		SpringApplication.run(MsPedidoApplication.class, args);
 	}
 	@Bean
 	public OpenAPI custumOpenAPI() {

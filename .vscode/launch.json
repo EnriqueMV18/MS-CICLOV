@@ -8,7 +8,8 @@
             "mainClass": "com.example.msconfigserver.MsConfigServerApplication",
             "projectName": "ms-config-server",
             "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=50658 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=ms-config-server"
         },
         {
             "type": "java",
@@ -18,7 +19,8 @@
             "mainClass": "com.example.msregistryserver.MsRegistryServerApplication",
             "projectName": "ms-registry-server",
             "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=50666 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=ms-registry-server"
         },
         {
             "type": "java",
@@ -28,7 +30,8 @@
             "mainClass": "com.example.msgatewayserver.MsGatewayServerApplication",
             "projectName": "ms-gateway-server",
             "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=50692 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=ms-gateway-server"
         },
         {
             "type": "java",
@@ -37,6 +40,27 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "com.example.msproducto.MsProductoApplication",
             "projectName": "ms-producto",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=50718 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=ms-producto"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MsClienteApplication<ms-cliente>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.mscliente.MsClienteApplication",
+            "projectName": "ms-cliente",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MsCatalogoApplication<ms-catalogo>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.mscatalogo.MsCatalogoApplication",
+            "projectName": "ms-catalogo",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
