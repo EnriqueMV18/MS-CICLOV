@@ -15,10 +15,11 @@ spring:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/mscatalogo
     username: root
-    password: sasha
+    password:
+
 eureka:
   client:
-      serviceUrl:
-        defaultZone: http://localhost:8090/eureka
+    serviceUrl:
+      defaultZone: http://localhost:8090/eureka
   instance:
     hostname: localhost
