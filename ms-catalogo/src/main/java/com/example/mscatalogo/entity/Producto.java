@@ -7,12 +7,12 @@ import lombok.Data;
 @Entity
 @Data
 public class Producto {
-       @Id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nombre;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "categoria_id")
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-    private Categoria categoria; 
+    private Categoria categoria;
 }

@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+
 @RestController
 @RequestMapping("/producto")
 public class ProductoController {
@@ -24,7 +25,7 @@ public class ProductoController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Producto> buscarPOrId(@PathVariable(required = true) Integer id) {
+    public ResponseEntity<Producto> buscarPorId(@PathVariable(required = true) Integer id) {
         return ResponseEntity.ok(productoService.buscarPorId(id).get());
     }
 
