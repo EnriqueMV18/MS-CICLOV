@@ -1,8 +1,8 @@
-package com.example.msauth.service;
+package maik.example.msauth.service;
 
-import com.example.msauth.entity.AuthUser;
-import com.example.msauth.entity.TokenDto;
-import com.example.msauth.dto.AuthUserDto;
+import maik.example.msauth.dto.AuthUserDto;
+import maik.example.msauth.entity.AuthUser;
+import maik.example.msauth.entity.TokenDto;
 
 
 public interface AuthUserService {

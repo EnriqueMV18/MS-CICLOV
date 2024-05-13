@@ -1,4 +1,4 @@
-package com.example.msauth.security;
+package maik.example.msauth.security;
 
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;

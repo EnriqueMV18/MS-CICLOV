@@ -1,9 +1,9 @@
-package com.example.msauth.security;
+package maik.example.msauth.security;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 
-import com.example.msauth.entity.AuthUser;
+import maik.example.msauth.entity.AuthUser;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
