@@ -1,5 +1,8 @@
 server:
+
   port: ${PORT:${SERVERS_PORT:0}}
+
+
 spring:
   jpa:
     hibernate.ddl-auto: update
@@ -9,7 +12,9 @@ spring:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/msauth
     username: root
-    password: 
+    password:
+
+
 eureka:
   client:
     serviceUrl:

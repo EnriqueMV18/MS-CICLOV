@@ -17,7 +17,6 @@ spring:
 
 
 
-
   security:
     user:
       name: root
