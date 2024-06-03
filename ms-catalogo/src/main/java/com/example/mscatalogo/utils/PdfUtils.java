@@ -7,7 +7,7 @@ import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfWriter;
 import java.io.ByteArrayOutputStream;
 import java.util.List;
-//import java.util.Map;
+import java.util.Map;
 public class PdfUtils {
     public static ByteArrayOutputStream generatePdfStream(List<Categoria> categorias) throws DocumentException {
         Document document = new Document();
