@@ -1,7 +1,6 @@
 server:
   port: 7070
 
-
 spring:
   application:
     name: config-server
@@ -9,16 +8,13 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/EnriqueMV18/MS-CICLOV.git # ruta del repositorio git
+          uri: https://github.com/EnriqueMV18/LUX-MS.git # ruta del repositorio git
           searchPaths: config-data
           #username:
           #password:
-          default-label: gateway-server
-
-
-
+          default-label: main
 
   security:
     user:
       name: root
-      password: 123456
+      password: sasha
